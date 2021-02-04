@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width-device-width,intial-scale=1.0" />
+  <link href="css/inputandtables.css" rel="stylesheet"/>
+
+</head>
+<body>
+	 <div id="envelope">
+		 <div id="fbox">
+					
+						<input id="input1" type="number" name="S/N" placeholder=" Enter your number"/>
+						<br />
+						<br />
+						<input id="input2" type="text" name="name" placeholder=" Enter your name" />
+						<br />
+						<br />
+						<input id="input3" type="text" name="job" placeholder=" Job"/>
+						<br />
+						<br />
+						<input id="input4" type="number" name="age" placeholder=" age"/>
+						<br />
+						<br />
+						<input type="submit" value="SUBMIT" onclick="clickShow();" />
+						
+					 
+		 </div>
+		 
+		 <div id="tbox">
+				<table id="table">
+					<tr>
+						<th>S/N</th>
+						<th>NAME</th>
+						<th>JOB</th>
+						<th>AGE</th>
+					</tr>
+					
+					
+				</table>
+		 
+		 </div>
+	 </div>
+	 
+	 <script>
+			
+			
+		 function clickShow(){
+					<!-- var input1,input2,input3,input4; -->
+					var text = " ";
+				 var sn = document.getElementById('input1').value 
+				 var name = document.getElementById('input2').value 
+				 var job = document.getElementById('input3').value 
+				 var age = document.getElementById('input4').value 
+					
+				 document.getElementById('table').innerHTML +=
+				 "<tr><td>" + sn + "</td><td>" + name + "</td><td>" + job + "</td><td>" + age + "</td></tr>";
+				 
+				 var sn = document.getElementById('input1').value += " ";
+				 var name = document.getElementById('input2').value += " ";
+				 var job = document.getElementById('input3').value += " ";
+				 var age = document.getElementById('input4').value += " ";
+		 }
+	 
+	 
+	 </script>
+</body>
+
+</html>
